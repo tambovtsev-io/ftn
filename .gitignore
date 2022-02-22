@@ -1,7 +1,9 @@
-*
-
-!.gitignore
-!pres1/*.tex
-!*/
-
-!pres1/img/*
+**.aux
+**.fdb_latexmk
+**.fls
+**.log
+**.nav
+**.out
+**.snm
+**.synctex.gz
+**.toc
