@@ -20,11 +20,14 @@
 
 \graphicspath{ {./img/} }
 
-\usetheme{Madrid}
+\usetheme{default} % Madrid
+\usecolortheme[named=black]{structure}
 \usefonttheme[onlymath]{serif}
 
 \title{Работа по поляризации}
 \subtitle{}
+\author{Садыков Даниил, Тамбовцев Илья}
+\date{}
 
 \begin{document}
 \frame {
@@ -38,6 +41,9 @@
 электромагнитной волне от времени. В работе мы имеем дело с линейной и
 круговой поляризацией.
 
+Будем рассматривать плоские волны:
+\[E = E_0 \ e^{-i(\omega t - kz)}\]
+
 Линейная поляризация -- вектор $\vec{E}$ колеблется в одной плоскости.
 
 Круговая -- вектор $\vec{E}$ описывает окружность, разность фаз между колебаниями
@@ -45,11 +51,10 @@
 
 \begin{center}
 \makebox[\textwidth]{\begin{tabular}{cc}
-    \makecell[c]{\includegraphics[width=0.3\textwidth]{linear_pol} \\
-                 Линейная поляризация} &
+    \makecell[c]{\includegraphics[width=0.4\textwidth]{linear_pol}} &
 
-    \makecell[c]{\includegraphics[width=0.3\textwidth]{circular_pol} \\
-                 Круговая поляризация} \\
+    \makecell[c]{\includegraphics[width=0.4\textwidth]{circular_pol}} \\
+    Линейная поляризация & Круговая поляризация
     \end{tabular}
 }
 \end{center}
@@ -98,7 +103,9 @@
 \begin{columns}
     \column{0.6\textwidth}
     Расположим перед лазером поляризатор и измерим зависимость $U(\theta)$.
-    Получим результат, соответствующий закону Малюса. $\Rightarrow$ лазер светит
+    Получим результат, соответствующий закону Малюса.
+
+    $\Rightarrow$ лазер светит
     линейно поляризованным светом.
 
     \column{0.4\textwidth}
@@ -131,8 +138,22 @@
 }
 
 \frame{
-??? Получили расхождение с теорией.. мб что там пластинка плохая и поляризация
-эллиптическая мб плохой вольтметр мб еще чтото хз
+\begin{columns}
+    \column{0.6\textwidth}
+    Установим приборы, как показано на рисунке, и будем крутить
+    пластинку $\lambda/4$, пока не получим максимум интенсивности.
+
+    \column{0.4\textwidth}
+    \begin{center}
+    \includegraphics[width=\textwidth]{circpol_ust} \\
+    Установка 7.1.5
+    \end{center}
+\end{columns}
+
+\vspace{10px}
+Получили расхождение с теорией. Это может быть связано с тем, пластинки $\lambda/4$
+хорошо работают только для определенной длины волны. Для других же поляризация
+эллиптическая.
 
 \begin{center}
     \makebox[\textwidth]{\includegraphics[width=0.7\textwidth]{715}}

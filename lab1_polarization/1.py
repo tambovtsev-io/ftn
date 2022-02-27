@@ -111,5 +111,3 @@ fig.update_layout(
 fig.update_xaxes(tick0=0, dtick=45)
 fig.write_image("pres/img/715.jpg", scale=2)
 fig.show()
-
-# %%
